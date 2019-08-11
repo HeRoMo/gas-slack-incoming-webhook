@@ -1,0 +1,30 @@
+{
+  "name": "gas-slack-incoming-webhook",
+  "version": "1.0.0",
+  "description": "Slack Incoming Webhook for GAS",
+  "main": "index.js",
+  "author": "HeRoMo",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint ./src/**/*",
+    "clasp:push": "./node_modules/.bin/clasp push",
+    "clasp:open": "./node_modules/.bin/clasp open",
+    "clasp:status": "./node_modules/.bin/clasp status",
+    "clasp:deployments": "./node_modules/.bin/clasp deployments",
+    "clasp:create": "./node_modules/.bin/clasp create --type api --rootDir src"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.2.1",
+    "@types/google-apps-script": "^0.0.56",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-googleappsscript": "^1.0.3",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "@slack/types": "^1.1.0"
+  }
+}
