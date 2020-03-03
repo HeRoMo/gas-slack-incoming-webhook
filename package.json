@@ -15,7 +15,7 @@
     "clasp:create": "./node_modules/.bin/clasp create --type api --rootDir src"
   },
   "devDependencies": {
-    "@google/clasp": "^2.2.1",
+    "@google/clasp": "^2.3.0",
     "@types/google-apps-script": "^0.0.56",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
