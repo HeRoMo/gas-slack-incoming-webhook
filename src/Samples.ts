@@ -15,7 +15,7 @@ function sendSimpleText_() {
 function sendMessageWithOpts_() {
   const message: IncomingWebhookSendArguments = {
     channel: 'general',
-    icon_emoji: ':ok:',
+    icon_emoji: ':ok:', // eslint-disable-line @typescript-eslint/camelcase
     username: 'Webhook for GAS',
     text: 'send Message With Opts',
   };
@@ -30,7 +30,7 @@ function sendComplexMessage_() {
     attachments: [
       {
         fallback: 'Plan a vacation',
-        author_name: 'Owner: rdesoto',
+        author_name: 'Owner: rdesoto', // eslint-disable-line @typescript-eslint/camelcase
         title: 'Plan a vacation',
         text: "I've been working too hard, it's time for a break.",
         actions: [
@@ -45,7 +45,7 @@ function sendComplexMessage_() {
             name: 'tags_list',
             type: 'select',
             text: 'Add a tag...',
-            data_source: 'static',
+            data_source: 'static', // eslint-disable-line @typescript-eslint/camelcase
             options: [
               {
                 text: 'Launch Blocking',
