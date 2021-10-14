@@ -4,17 +4,18 @@
 
 A Slack Incoming Webhook client for Google Apps Script.
 
-This Libray is published as Library-ID `M7LHE2p_dXNrScGShjs9Rl3IZ3Rtf7LGR`.
+This Libray is published as Library-ID `1ZIccV8fPCz2UKpNfRxX6Xb-IkusswcAtDXeBbtM3k8IB-qvPToCfPcfX`.
 
 ## Instalation
 
 1. Create or Open your GAS project.
-2. Select menu [Resource] - [Library], then Library daialog is opened.
-3. Input `M7LHE2p_dXNrScGShjs9Rl3IZ3Rtf7LGR`, and click *Add* button. 
+2. Cliock Add Library link, then Library daialog is opened.
    ![Input library-id](doc/images/library-dialog1.png)
-4. Change *Identifier* of this library to `Slack`
+3. Input `1ZIccV8fPCz2UKpNfRxX6Xb-IkusswcAtDXeBbtM3k8IB-qvPToCfPcfX` to *Script ID*, and click *Search* button. 
+4. Select library version.
+5. Change *ID* of this library to `Slack`
    ![change Identifier](doc/images/library-dialog2.png)
-5. Click *Save* button.
+6. Click *Add* button.
 
 ## Usage
 
