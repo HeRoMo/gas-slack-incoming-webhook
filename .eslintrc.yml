@@ -8,9 +8,7 @@ extends:
   - plugin:import/warnings
   - plugin:import/typescript # this line does the trick
 globals:
-  Atomics: readonly
-  SharedArrayBuffer: readonly
-  TODOIST_TOKEN: readonly
+  GoogleAppsScript: readonly
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaVersion: 2018
@@ -18,13 +16,26 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
   - googleappsscript
+ignorePatterns:
+  - '*.js'
+  - '*.d.ts'
 rules:
-  '@typescript-eslint/camelcase': [error, { allow: [URL_Fetch] }]
+  "@typescript-eslint/naming-convention": [
+    error,
+    { selector: default, format: [camelCase] },
+    { selector: variable, format: [camelCase, UPPER_CASE] },
+    { selector: parameter, format: [camelCase], leadingUnderscore: allow },
+    { selector: memberLike, modifiers: [private], format: [camelCase] },
+    { selector: typeLike, format: [PascalCase] },
+    { selector: function, format:  [camelCase], trailingUnderscore: allow }
+  ]
   '@typescript-eslint/no-unused-vars': error
-  camelcase: off
+  "@typescript-eslint/no-use-before-define": [error]
+  camelcase: "off"
   import/extensions: [error, ignorePackages, { ts: never, js: never }]
-  import/prefer-default-export: off
+  import/prefer-default-export: "off"
   lines-between-class-members: [error, always, { exceptAfterSingleLine: true }]
   no-console: [error, { allow: [info, warn, error] }]
   no-underscore-dangle: [error, { allowAfterThis: true }]
   no-unused-vars: off
+  no-use-before-define: "off"
