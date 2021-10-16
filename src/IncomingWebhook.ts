@@ -33,7 +33,7 @@ export class IncomingWebhook {
     }
 
     try {
-      // eslint-disable-next-line camelcase
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       const opts: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
         method: 'post',
         contentType: 'application/json',
@@ -52,7 +52,7 @@ export interface IncomingWebhookResult {
   text: string;
 }
 
-/* eslint-disable camelcase */
+/* eslint-disable @typescript-eslint/naming-convention */
 export interface IncomingWebhookDefaultArguments {
   username?: string;
   icon_emoji?: string;
