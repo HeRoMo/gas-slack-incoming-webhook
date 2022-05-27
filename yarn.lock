@@ -114,10 +114,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.2.0.tgz#667bfc6186ae7c9e0b45a08960c551437176e1ca"
   integrity sha512-VkE3KLBmJwcCaVARtQpfuKcKv8gcBmUubrfHGF84dXuuW6jgsRYxPtzcIhPyK9WAPpRt2/xY6zkD9MnRaJzSyw==
 
-"@slack/types@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.4.0.tgz#b6f6d50e9181f723080b841302e089739cef512d"
-  integrity sha512-0k8UlVEH9gUVwTbwcanS1JT2vCROkr1WESgdXW7d2maWYTuwbVEx87YvXPjsemAJfdu+RYqxGhO2oGTigprepA==
+"@slack/types@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.5.0.tgz#105a0ca39fa26c1f6f822887d0de553737555d07"
+  integrity sha512-EXS+D5BWmArY2rW4V8om/y5rwnjPxlXJP1SlRsStF/rQJWWBQDwOnzuS7km2O19GA07sY7T1lIe/iy6YzTf4GQ==
 
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
