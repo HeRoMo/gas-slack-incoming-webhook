@@ -25,6 +25,6 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "dependencies": {
-    "@slack/types": "^2.4.0"
+    "@slack/types": "^2.5.0"
   }
 }
