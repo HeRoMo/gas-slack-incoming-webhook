@@ -205,9 +205,9 @@
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
 "@slack/types@^2.5.0":
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.14.0.tgz#913946b4bcb635dad1d39ceca73699215c38cf6f"
-  integrity sha512-n0EGm7ENQRxlXbgKSrQZL69grzg1gHLAVd+GlRVQJ1NSORo0FrApR7wql/gaKdu2n4TO83Sq/AmeUOqD60aXUA==
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.17.0.tgz#f00903485e12bba57b40b0e5e6ea28c889f57044"
+  integrity sha512-30KdPUBGJczlchnV8tKSxFG1yPk6rb8waba6HAoNHOy99zomzovQo6WpH9vQsY0g3RlxgVLojxKMRe0WjEjFWw==
 
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
