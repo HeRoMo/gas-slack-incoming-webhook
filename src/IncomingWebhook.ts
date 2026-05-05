@@ -33,7 +33,6 @@ export class IncomingWebhook {
     }
 
     try {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
       const opts: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
         method: 'post',
         contentType: 'application/json',
@@ -68,4 +67,4 @@ export interface IncomingWebhookSendArguments extends IncomingWebhookDefaultArgu
   unfurl_links?: boolean;
   unfurl_media?: boolean;
 }
-/* eslint-enable camelcase */
+/* eslint-enable @typescript-eslint/naming-convention */
