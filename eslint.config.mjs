@@ -1,19 +1,9 @@
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import gasPlugin from 'eslint-plugin-googleappsscript';
+import importPlugin from 'eslint-plugin-import';
 import globals from 'globals';
-import { fileURLToPath } from 'url';
-import path from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-});
 
 const gasGlobals = Object.fromEntries(
   Object.keys(gasPlugin.environments.googleappsscript.globals).map(
@@ -24,12 +14,10 @@ const gasGlobals = Object.fromEntries(
 export default [
   { ignores: ['**/*.js', '**/*.mjs', '**/*.d.ts', 'src/appsscript.json'] },
 
-  ...compat.extends(
-    'airbnb-base',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-  ),
+  js.configs.recommended,
+  importPlugin.flatConfigs.errors,
+  importPlugin.flatConfigs.warnings,
+  importPlugin.flatConfigs.typescript,
 
   {
     files: ['**/*.ts'],
@@ -39,7 +27,7 @@ export default [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
         sourceType: 'module',
       },
       globals: {
@@ -66,8 +54,8 @@ export default [
       'import/prefer-default-export': 'off',
       'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
       'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
-      'no-underscore-dangle': ['error', { allowAfterThis: true }],
       'no-undef': 'off',
+      'no-underscore-dangle': ['error', { allowAfterThis: true }],
       'no-unused-vars': 'off',
       'no-use-before-define': 'off',
     },
