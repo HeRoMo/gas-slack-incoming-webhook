@@ -1,9 +1,7 @@
-import { MessageAttachment, Block, KnownBlock } from '@slack/types';
-
 /**
  * A client for Slack's Incoming Webhooks
  */
-export class IncomingWebhook {
+class IncomingWebhook {
   // The webhook URL
   private url: string;
 
@@ -22,7 +20,6 @@ export class IncomingWebhook {
    * Send a notification to a conversation
    * @param message the message (a simple string, or an object describing the message)
    */
-  // eslint-disable-next-line  consistent-return
   public send(message: string | IncomingWebhookSendArguments): IncomingWebhookResult {
     let payload: IncomingWebhookSendArguments = { ...this.defaults };
 
@@ -32,27 +29,23 @@ export class IncomingWebhook {
       payload = { ...payload, ...message };
     }
 
-    try {
-      const opts: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
-        method: 'post',
-        contentType: 'application/json',
-        payload: JSON.stringify(payload),
-        muteHttpExceptions: true,
-      };
-      const response = UrlFetchApp.fetch(this.url, opts);
-      return { text: response.getContentText() };
-    } catch (error) {
-      console.error({ error });
-    }
+    const opts: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
+      method: 'post',
+      contentType: 'application/json',
+      payload: JSON.stringify(payload),
+      muteHttpExceptions: true,
+    };
+    const response = UrlFetchApp.fetch(this.url, opts);
+    return { text: response.getContentText() };
   }
 }
 
-export interface IncomingWebhookResult {
+interface IncomingWebhookResult {
   text: string;
 }
 
 /* eslint-disable @typescript-eslint/naming-convention */
-export interface IncomingWebhookDefaultArguments {
+interface IncomingWebhookDefaultArguments {
   username?: string;
   icon_emoji?: string;
   icon_url?: string;
@@ -61,10 +54,15 @@ export interface IncomingWebhookDefaultArguments {
   link_names?: boolean;
 }
 
-export interface IncomingWebhookSendArguments extends IncomingWebhookDefaultArguments {
+interface IncomingWebhookSendArguments extends IncomingWebhookDefaultArguments {
   attachments?: MessageAttachment[];
   blocks?: (KnownBlock | Block)[];
   unfurl_links?: boolean;
   unfurl_media?: boolean;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function createIncomingWebhook(url: string, defaults: IncomingWebhookDefaultArguments = {}) {
+  return new IncomingWebhook(url, defaults);
 }
 /* eslint-enable @typescript-eslint/naming-convention */

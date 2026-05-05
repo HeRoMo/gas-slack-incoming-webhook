@@ -1,4 +1,4 @@
-import { IncomingWebhook, IncomingWebhookSendArguments } from './IncomingWebhook';
+/// <reference path="./IncomingWebhook.ts" />
 
 const url = '';
 /**
