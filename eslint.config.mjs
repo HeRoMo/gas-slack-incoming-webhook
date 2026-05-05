@@ -67,6 +67,7 @@ export default [
       'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
       'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
       'no-underscore-dangle': ['error', { allowAfterThis: true }],
+      'no-undef': 'off',
       'no-unused-vars': 'off',
       'no-use-before-define': 'off',
     },

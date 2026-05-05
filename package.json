@@ -7,12 +7,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "tsc && cp src/appsscript.json dist/",
     "eslint": "eslint .",
-    "clasp:push": "./node_modules/.bin/clasp push",
+    "clasp:push": "yarn build && ./node_modules/.bin/clasp push",
     "clasp:open": "./node_modules/.bin/clasp open",
     "clasp:status": "./node_modules/.bin/clasp status",
     "clasp:deployments": "./node_modules/.bin/clasp deployments",
-    "clasp:create": "./node_modules/.bin/clasp create --type api --rootDir src"
+    "clasp:create": "./node_modules/.bin/clasp create --type api --rootDir dist"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
