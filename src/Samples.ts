@@ -1,3 +1,4 @@
+// @ts-nocheck
 /// <reference path="./IncomingWebhook.ts" />
 
 const url = '';
