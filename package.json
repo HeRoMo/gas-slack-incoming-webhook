@@ -27,6 +27,6 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@slack/types": "^2.21.0"
+    "@slack/types": "^3.0.0"
   }
 }

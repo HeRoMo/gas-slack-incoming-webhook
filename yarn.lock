@@ -382,10 +382,10 @@
   resolved "https://registry.yarnpkg.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
   integrity sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==
 
-"@slack/types@^2.21.0":
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.21.0.tgz#8fda1b36d627c4c17f02d28d80cd8bb8534074e7"
-  integrity sha512-ZLMsKnD5KLRPmhFEoGoBQUD5Pc2bH3xFc5ygHlioEc0WmLGyZGoGCtMff4rpejrFnptrhfxcKpWxW4r3g39R0A==
+"@slack/types@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@slack/types/-/types-3.0.0.tgz#be620fb6ff6e7150b26f189c09760ffbb026428d"
+  integrity sha512-KNOqpnNAlsFt5Jk9XBclslQ0lobRIg/0tnhpmvZJAglHJx9E8oceN8hC3gaBzkR6UzQ9Wzq4rLsJ98wUcxWPfw==
 
 "@types/esrecurse@^4.3.1":
   version "4.3.1"
