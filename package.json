@@ -24,7 +24,7 @@
     "eslint": "^10.3.0",
     "eslint-plugin-googleappsscript": "1.0.5",
     "eslint-plugin-import": "2.32.0",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.0"
   },
   "dependencies": {
     "@slack/types": "^3.0.0"
